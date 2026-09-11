@@ -142,7 +142,7 @@ The result is transparent rather than generalized: disk, cache, filesystem, and 
 
 ## Quality evidence
 
-- 72 tests passing locally
+- 75 tests passing locally
 - 95% branch-aware code coverage
 - Linux, macOS, and Windows CI across Python 3.11 and 3.13
 - Unit, integration, failure-injection, CLI, and randomized path-safety tests
