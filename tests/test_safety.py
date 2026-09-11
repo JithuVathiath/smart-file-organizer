@@ -25,7 +25,19 @@ def test_sha256_and_verify(tmp_path: Path) -> None:
     verify_file(file, 4, digest)
 
 
-@pytest.mark.parametrize("value", ["", "../secret", "folder/../secret", "/absolute", "."])
+@pytest.mark.parametrize(
+    "value",
+    [
+        "",
+        "../secret",
+        "folder/../secret",
+        "/absolute",
+        ".",
+        r"C:\Windows\system.ini",
+        r"\\server\share\secret",
+        r"folder\..\secret",
+    ],
+)
 def test_rejects_unsafe_relative_paths(value: str) -> None:
     with pytest.raises(SafetyError):
         safe_relative_path(value)

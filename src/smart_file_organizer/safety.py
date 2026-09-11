@@ -5,7 +5,7 @@ from __future__ import annotations
 import hashlib
 import os
 import shutil
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 
 CHUNK_SIZE = 1024 * 1024
 
@@ -31,10 +31,16 @@ def resolved_root(path: Path) -> Path:
 
 def safe_relative_path(value: str) -> Path:
     path = Path(value)
+    posix_path = PurePosixPath(value)
+    windows_path = PureWindowsPath(value)
     if (
         path.is_absolute()
+        or posix_path.is_absolute()
+        or windows_path.is_absolute()
+        or bool(windows_path.drive)
+        or "\\" in value
         or value in {"", ".", ".."}
-        or any(part in {"", ".", ".."} for part in path.parts)
+        or any(part in {"", ".", ".."} for part in posix_path.parts)
     ):
         raise SafetyError(f"Unsafe relative path: {value!r}")
     return path
