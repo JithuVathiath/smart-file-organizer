@@ -1,0 +1,19 @@
+# Custom rules are evaluated before built-in rules. Higher priorities win.
+
+[[rules]]
+id = "cv-and-resume"
+destination = "Career/CV/{year}"
+priority = 500
+explanation = "CV or resume keyword in a supported document"
+confidence = "high"
+extensions = ["pdf", "doc", "docx"]
+name_contains = ["cv", "resume"]
+
+[[rules]]
+id = "coursework"
+destination = "Education/Coursework/{year}"
+priority = 450
+explanation = "coursework or assignment keyword"
+confidence = "medium"
+extensions = ["pdf", "docx", "pptx"]
+name_regex = "(assignment|coursework|module)"

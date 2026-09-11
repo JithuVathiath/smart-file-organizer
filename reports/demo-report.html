@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart File Organizer — Plan eff7f1e964d6</title>
+<style>
+:root {--ink:#172033;--muted:#667085;--paper:#f6f8fc;--card:#fff;--blue:#3457d5;--green:#067647;--amber:#b54708;}
+* {box-sizing:border-box} body {margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,sans-serif}
+main {max-width:1180px;margin:auto;padding:52px 24px} .eyebrow {color:var(--blue);font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+h1 {font-size:clamp(2rem,5vw,3.7rem);line-height:1.05;margin:.35rem 0 1rem} .subtitle {color:var(--muted);max-width:760px;font-size:1.08rem}
+.cards {display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:34px 0} .card {background:var(--card);padding:20px;border-radius:14px;box-shadow:0 8px 30px #1b2b5b0c}
+.label {color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em} .value {font-size:1.8rem;font-weight:760;margin-top:4px}
+.safety {border-left:4px solid var(--green);background:#ecfdf3;padding:14px 18px;border-radius:8px;margin:24px 0}
+.table-wrap {overflow:auto;background:var(--card);border-radius:14px;box-shadow:0 8px 30px #1b2b5b0c} table {border-collapse:collapse;width:100%;min-width:920px}
+th,td {text-align:left;padding:14px;border-bottom:1px solid #eaecf0;vertical-align:top} th {font-size:.78rem;text-transform:uppercase;color:var(--muted);letter-spacing:.05em}
+code {font-size:.84rem} .status {padding:4px 9px;border-radius:999px;font-size:.74rem;font-weight:700;text-transform:uppercase}
+.move {background:#dcfae6;color:var(--green)} .skip {background:#f2f4f7;color:#344054} .review {background:#fef0c7;color:var(--amber)}
+footer {color:var(--muted);margin-top:28px;font-size:.88rem} @media(max-width:760px){.cards{grid-template-columns:repeat(2,1fr)}}
+</style></head>
+<body><main>
+<div class="eyebrow">Local-first filesystem automation</div>
+<h1>Organization plan</h1>
+<p class="subtitle">A reviewable record of every recommended action. This report cannot change files; applying the plan requires a separate explicit confirmation.</p>
+<section class="cards">
+<div class="card"><div class="label">Plan ID</div><div class="value">eff7f1e964d6</div></div>
+<div class="card"><div class="label">Files to move</div><div class="value">7</div></div>
+<div class="card"><div class="label">Skipped / review</div><div class="value">0</div></div>
+<div class="card"><div class="label">Planned data</div><div class="value">410 B</div></div>
+</section>
+<div class="safety"><strong>Safety state:</strong> dry-run only. No files were modified while producing this report.</div>
+<div class="table-wrap"><table><thead><tr><th>Status</th><th>Source</th><th>Destination</th><th>Rule</th><th>Why</th><th>Conflict</th></tr></thead><tbody><tr><td><span class='status move'>move</span></td><td><code>Inbox/bank_statement_2025.pdf</code></td><td><code>Finance/Records/2025/bank_statement_2025.pdf</code></td><td>financial-records</td><td>financial-document keyword and supported document format</td><td>—</td></tr>
+<tr><td><span class='status move'>move</span></td><td><code>Inbox/conference_paper_2024.pdf</code></td><td><code>Research/Papers/2024/conference_paper_2024.pdf</code></td><td>research-papers</td><td>research-paper keyword and document format</td><td>—</td></tr>
+<tr><td><span class='status move'>move</span></td><td><code>Inbox/customer_data.csv</code></td><td><code>Documents/Spreadsheets/2026/customer_data.csv</code></td><td>spreadsheets</td><td>spreadsheet or tabular document</td><td>—</td></tr>
+<tr><td><span class='status move'>move</span></td><td><code>Inbox/holiday_photo_2023.jpg</code></td><td><code>Media/Images/2023/holiday_photo_2023.jpg</code></td><td>images</td><td>image file</td><td>—</td></tr>
+<tr><td><span class='status move'>move</span></td><td><code>Inbox/meeting_notes.txt</code></td><td><code>Documents/Text/2026/meeting_notes.txt</code></td><td>text</td><td>plain-text document</td><td>—</td></tr>
+<tr><td><span class='status move'>move</span></td><td><code>Inbox/model.py</code></td><td><code>Code/Snippets/py/model.py</code></td><td>code</td><td>source-code file</td><td>—</td></tr>
+<tr><td><span class='status move'>move</span></td><td><code>Inbox/project_export.zip</code></td><td><code>Archives/2026/project_export.zip</code></td><td>archives</td><td>compressed archive</td><td>—</td></tr></tbody></table></div>
+<footer>Generated 2026-09-11T04:11:19.920945+00:00 · Root: [redacted local folder] · Policy: rename</footer>
+</main></body></html>
