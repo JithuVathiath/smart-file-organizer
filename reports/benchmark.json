@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-09-11T04:05:09.146909+00:00",
+  "system": {
+    "platform": "macOS-15.5-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "python": "3.13.2"
+  },
+  "method": "Real temporary files; SHA-256 content hashing enabled; median-free single run.",
+  "results": [
+    {
+      "files": 1000,
+      "bytes": 30890,
+      "planned_moves": 1000,
+      "creation_seconds": 0.0937,
+      "scan_seconds": 0.0447,
+      "planning_seconds": 0.0927,
+      "scan_files_per_second": 22350,
+      "plan_files_per_second": 10785
+    },
+    {
+      "files": 10000,
+      "bytes": 318890,
+      "planned_moves": 10000,
+      "creation_seconds": 0.9172,
+      "scan_seconds": 0.4222,
+      "planning_seconds": 0.8706,
+      "scan_files_per_second": 23684,
+      "plan_files_per_second": 11486
+    },
+    {
+      "files": 100000,
+      "bytes": 3288890,
+      "planned_moves": 100000,
+      "creation_seconds": 11.816,
+      "scan_seconds": 25.7443,
+      "planning_seconds": 8.7955,
+      "scan_files_per_second": 3884,
+      "plan_files_per_second": 11370
+    }
+  ]
+}
